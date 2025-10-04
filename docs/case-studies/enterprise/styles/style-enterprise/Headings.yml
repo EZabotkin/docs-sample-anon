@@ -1,0 +1,5 @@
+extends: capitalization
+message: "Use sentence case in headings."
+level: warning
+scope: heading.h2, heading.h3, heading.h4
+style: AP

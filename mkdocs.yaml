@@ -1,0 +1,73 @@
+site_name: Docs Sample
+site_url: https://ezabotkin.github.io/docs-sample-anon/
+repo_url: https://github.com/EZabotkin/docs-sample-anon
+
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: timeago            # формат: date|datetime|iso_*|timeago
+      enable_creation_date: true
+  - i18n:
+      docs_structure: suffix
+      reconfigure_material: true
+      languages:
+        - locale: en
+          name: English
+          default: true
+        - locale: de
+          name: Deutsch
+          nav:
+            - Startseite: de/kurzfassung.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.snippets:
+      check_paths: true
+      base_path:
+        - .
+nav:
+  - Home: index.md
+  - Workflow Demo:
+      - Very Quick Quickstart: workflow/quickstart.md
+      - Code Node (JS): workflow/code-node.md
+      - HTTP Client Node: workflow/http-client.md
+      - Diagrams: workflow/diagrams.md
+  - Contributing: contributing/index.md
+  - Metrics we watch: metrics/metrics.md
+  - Case Studies:
+      - Enterprise Platform (neutralized): case-studies/enterprise/index.md
