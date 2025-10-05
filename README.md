@@ -7,14 +7,16 @@ It combines anonymized [**enterprise case-study**](docs/case-studies/enterprise/
 - Static site: **MkDocs Material**
 - CI: build, link check (lychee), style lint (Vale)
 - Content: task-first (Quickstart/How-to/Reference), mermaid diagrams, runnable snippets
-- Languages: EN with a short DE overview (B2–C1)
+- Languages: EN, DE (only for a couple of documents to demonstrate ability to create content in German)
 
 ## Structure
-- `docs/workflow/` – generic demo (no brand names)
-- `docs/case-studies/` – anonymized enterprise case (paste your existing content here, scrubbed)
-- `docs/contributing/`, `docs/metrics.md` – process & KPI
+
+- `docs/workflow/` – generic workflow demo
+- `docs/case-studies/` – anonymized enterprise case
+- `docs/contributing/`, `docs/metrics/` – process & KPI
 - `.github/workflows/` – CI for docs
 - `.vale.ini` and `styles/` – style checks (Vale)
+- `lychee.toml` – lick checks
 
 ## Install, build, and preview the docs site locally
 
