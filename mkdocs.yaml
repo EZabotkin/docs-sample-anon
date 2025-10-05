@@ -73,6 +73,7 @@ nav:
       - Post Process and Guardrails: workflow/post-process.md
       - Workflow Very Quick Start: workflow/quickstart.md
   - Metrics we watch: metrics/metrics.md
+  - Troubleshooting: troubleshooting/troubleshooting.md
   - Case Studies:
       - Enterprise Platform (neutralized):
           - Introduction: case-studies/enterprise/docs/index.md

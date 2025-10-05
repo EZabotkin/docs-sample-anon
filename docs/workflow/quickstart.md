@@ -1,6 +1,6 @@
 # Very Quick Quickstart (Workflow Platform)
 
-> Goal: Build a minimal workflow (Webhook → Code → HTTP Client) in under 10 minutes.
+> Goal: Build a minimal workflow (Webhook → Code → HTTP Client) in less than 10 minutes.
 
 ## 1) Create a Webhook trigger
 1. Create a new workflow.
