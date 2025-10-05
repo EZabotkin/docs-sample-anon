@@ -1,7 +1,7 @@
 site_name: Docs Sample
 site_url: https://ezabotkin.github.io/docs-sample-anon/
 repo_url: https://github.com/EZabotkin/docs-sample-anon
-edit_uri:
+edit_uri: edit/main/docs/
 
 theme:
   name: material
