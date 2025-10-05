@@ -1,0 +1,18 @@
+# Check links in Markdown/HTML without flakiness.
+
+# Treat these as OK or skip them entirely
+exclude = [
+    "https://example.invalid/*",     # placeholder links in docs
+    "^mailto:", "^tel:", "^ssh:", "^file:", "^urn:", "^npm:",
+    "https://www.linkedin.com/*"     # LinkedIn often rate-limits
+]
+
+# Network behavior
+timeout = 15            # seconds (int, not "15s")
+max_retries = 2         # total retry attempts
+retry_wait_time = 2     # seconds between retries (int, not "2s")
+max_concurrency = 10
+user_agent = "docs-sample-anon-link-checker/1.0 (+https://github.com/EZabotkin/docs-sample-anon)"
+
+# Consider these status codes acceptable (avoid failing on walled gardens)
+accept = [429, 999]        # 999 = LinkedIn, 429 = rate limit

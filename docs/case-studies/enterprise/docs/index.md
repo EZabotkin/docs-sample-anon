@@ -1,8 +1,6 @@
-# IONOS Docs Assignment
+# Docs Sample
 
-This repository contains a static documentation site for a take-home assignment provided by IONOS.
-
-The repository contains the following documents:
+This section contains a case-study demo, consisting of the following documents:
 
 - [Getting Started: Authenticate and Make Your First API Requests](guides/getting-started.md) — a simple how-to on making your first requests using the API.
 - Erste Schritte: Authentifizieren und Ihre ersten API-Anfragen senden — the same Getting Started Guide translated into German.

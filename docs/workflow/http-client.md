@@ -1,19 +1,26 @@
-# HTTP Client Node – Cheatsheet
+# Call the model (HTTP client)
 
-## Quickstart
-- **Method:** GET/POST
-- **URL:** Target endpoint (e.g., `https://httpbin.org/post`)
-- **Auth:** None/Bearer/API Key as needed
-- **Body:** `{{$json}}` to forward prior node output
+Here is a tiny example of an HTTP client node.
 
-## Retry & Limits
-- Enable retries on 429/5xx.
-- Respect rate limits (backoff, `Retry-After`).
+Send a compact, explicit JSON contract. Keep **temperature** low for reproducibility.
 
-## Error Matrix (Examples)
-| Code | Cause                  | Action                      |
-|-----:|------------------------|-----------------------------|
-| 400  | Invalid payload        | Validate/adjust body        |
-| 401  | Missing/expired token  | Refresh/attach auth         |
-| 429  | Rate limit             | Retry with backoff          |
-| 5xx  | Server error           | Retry, alert, fallback      |
+```json
+{
+  "task": "summarize",
+  "audience": "developer",
+  "format": "bullet_points",
+  "language": "en",
+  "constraints": {
+    "max_tokens": 200,
+    "no_pi": true,
+    "style": "concise, actionable"
+  },
+  "input": "{{ $json.text }}"
+}
+```
+
+**HTTP tips**
+
+* **Timeout:** 15–30s depending on the provider.
+* **Retries:** enable for transient 429/5xx; honor `Retry-After`.
+* **Idempotency:** pass a stable operation key when supported.

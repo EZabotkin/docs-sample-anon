@@ -1,7 +1,7 @@
 site_name: Docs Sample
 site_url: https://ezabotkin.github.io/docs-sample-anon/
 repo_url: https://github.com/EZabotkin/docs-sample-anon
-
+edit_uri:
 
 theme:
   name: material
@@ -29,9 +29,6 @@ theme:
 
 plugins:
   - search
-  - git-revision-date-localized:
-      type: timeago            # формат: date|datetime|iso_*|timeago
-      enable_creation_date: true
   - i18n:
       docs_structure: suffix
       reconfigure_material: true
@@ -42,7 +39,13 @@ plugins:
         - locale: de
           name: Deutsch
           nav:
-            - Startseite: de/kurzfassung.md
+            - Startseite: index.md
+            - Case Studies:
+              - Case Studies: case-studies/enterprise/docs/index.md
+              - Erste Schritte: case-studies/enterprise/docs/guides/getting-started.md
+  - git-revision-date-localized:
+      type: timeago            # формат: date|datetime|iso_*|timeago
+      enable_creation_date: true
 
 markdown_extensions:
   - admonition
@@ -62,12 +65,20 @@ markdown_extensions:
         - .
 nav:
   - Home: index.md
-  - Workflow Demo:
-      - Very Quick Quickstart: workflow/quickstart.md
-      - Code Node (JS): workflow/code-node.md
-      - HTTP Client Node: workflow/http-client.md
-      - Diagrams: workflow/diagrams.md
-  - Contributing: contributing/index.md
+  - Contributing: contributing/contributing.md
+  - AI-Workflow Demo:
+      - AI Transform Quickstart: ai/ai-transform.md
+      - Preparing Input: workflow/preparing-input.md
+      - HTTP Client: workflow/http-client.md
+      - Post Process and Guardrails: workflow/post-process.md
+      - Workflow Very Quick Start: workflow/quickstart.md
   - Metrics we watch: metrics/metrics.md
   - Case Studies:
-      - Enterprise Platform (neutralized): case-studies/enterprise/index.md
+      - Enterprise Platform (neutralized):
+          - Introduction: case-studies/enterprise/docs/index.md
+          - Guides:
+              - Quickstart: case-studies/enterprise/docs/guides/quickstart.md
+              - Getting Started: case-studies/enterprise/docs/guides/getting-started.md
+              - Custom Alerts Feature: case-studies/enterprise/docs/guides/custom-alerts.md
+          - References:
+              - Users: case-studies/enterprise/docs/reference/users.md

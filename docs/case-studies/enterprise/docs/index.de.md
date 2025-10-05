@@ -1,8 +1,6 @@
-# IONOS Docs Assignment
+# Docs Sample
 
-Dieses Repository enthält die Dokumentation zu einer Take-Home-Aufgabe von IONOS.
-
-Das Repository enthält die folgenden Dokumente:
+Dieses Direktorium enthält die Demo-Dokumentation mit folgenden Dokumente:
 
 * [Getting Started: Authenticate and Make Your First API Requests](guides/getting-started.md) — eine einfache Schritt-für-Schritt-Anleitung für die ersten API-Anfragen.
 * [Erste Schritte: Authentifizieren und Ihre ersten API-Anfragen senden](guides/getting-started.de.md) — dieselbe Getting-Started-Anleitung in deutscher Übersetzung.

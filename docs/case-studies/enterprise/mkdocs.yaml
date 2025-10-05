@@ -38,7 +38,7 @@ plugins:
         - locale: de
           name: Deutsch
           nav:
-            - Startseite: index.md
+            - Startseite: contributing.md
             - Anleitungen:
                 - Erste Schritte: guides/getting-started.md
 
@@ -55,7 +55,7 @@ markdown_extensions:
       base_path:
         - .
 nav:
-  - Home: index.md
+  - Home: contributing.md
   - Guides:
       - Getting started: guides/getting-started.md
       - Quickstart: guides/quickstart.md
