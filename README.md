@@ -27,24 +27,25 @@ It combines anonymized [**enterprise case-study**](docs/case-studies/enterprise/
 - Git
 - (optional) a terminal with UTF-8 support
 
-!!! tip "Tip"
-Use a virtual environment so your global Python stays clean.
+> **Tip**
+>
+> Use a virtual environment so your global Python stays clean.
 
-    Use the following commands to create and activate a virtual environment:
+> Use the following commands to create and activate a virtual environment:
 
-    - **macOS/Linux**
+> - **macOS/Linux**
   
-        ```bash
-        python -m venv .venv
-        source .venv/bin/activate
-        ```
+>   ```bash
+>   python -m venv .venv
+>   source .venv/bin/activate
+>   ```
 
-    - **Windows (PowerShell)**
-  
-        ```bash
-        py -m venv .venv
-        .venv\Scripts\Activate.ps1
-        ```
+> - **Windows (PowerShell)**
+>
+>   ```bash
+>   py -m venv .venv
+>   .venv\Scripts\Activate.ps1
+>   ```
 
 ### Preview the site locally
 
@@ -62,8 +63,9 @@ To preview the site locally:
     python -m mkdocs serve
     ```
 
-   !!! info "Important"
-   The site will automatically reload when you change any file.
+> **Important**
+> 
+> The site will automatically reload when you change any file.
 
 3. Open the URL printed in the terminal (usually <http://127.0.0.1:8000>).
 
