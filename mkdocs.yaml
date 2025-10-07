@@ -29,21 +29,21 @@ theme:
     - content.action.edit
     - content.action.view
 
-  extra:
-    analytics:
-      provider: google
-      property: G-K7WGJ1HS4X
-      feedback:
-        title: Feedback
-        ratings:
-          - icon: material/thumb-up-outline
-            name: Useful
-            data: 1
-            note: Thank you!
-          - icon: material/thumb-down-outline
-            name: Not useful
-            data: 0
-            note: Leave a comment to help us improve our docs.
+extra:
+  analytics:
+    provider: google
+    property: G-K7WGJ1HS4X
+    feedback:
+      title: Feedback
+      ratings:
+        - icon: material/thumb-up-outline
+          name: Useful
+          data: 1
+          note: Thank you!
+        - icon: material/thumb-down-outline
+          name: Not useful
+          data: 0
+          note: Leave a comment to help us improve our docs.
 
 plugins:
   - search
